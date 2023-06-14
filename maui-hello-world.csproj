@@ -49,7 +49,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 	  <PackageReference Include="DotNetMeteor.HotReload.Plugin" Version="3.0.2" />
 	</ItemGroup>
 
