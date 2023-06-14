@@ -1,24 +1,13 @@
-﻿namespace maui_hello_world;
+﻿using maui_hello_world.ViewModels;
+
+namespace maui_hello_world;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
-	public MainPage()
+	public MainPage(CountViewModel countViewModel)
 	{
 		InitializeComponent();
-	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    this.BindingContext = countViewModel;
+  }
 }
 
